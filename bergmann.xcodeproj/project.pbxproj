@@ -99,13 +99,11 @@
 		FF1034582B4D8C0E0084F5C0 /* bergmann */ = {
 			isa = PBXGroup;
 			children = (
-				FF1034592B4D8C0E0084F5C0 /* AppDelegate.swift */,
-				FF10345B2B4D8C0E0084F5C0 /* SceneDelegate.swift */,
-				FF10345D2B4D8C0E0084F5C0 /* ViewController.swift */,
-				FF10345F2B4D8C0E0084F5C0 /* Main.storyboard */,
-				FF1034622B4D8C100084F5C0 /* Assets.xcassets */,
-				FF1034642B4D8C100084F5C0 /* LaunchScreen.storyboard */,
-				FF1034672B4D8C100084F5C0 /* Info.plist */,
+				FF1034892B4D8DFC0084F5C0 /* Application */,
+				FF10348C2B4D8E340084F5C0 /* Resources */,
+				FF10348D2B4D8E3E0084F5C0 /* Screens */,
+				FF10348A2B4D8E130084F5C0 /* Storyboards */,
+				FF10348B2B4D8E250084F5C0 /* SupportingFiles */,
 			);
 			path = bergmann;
 			sourceTree = "<group>";
@@ -125,6 +123,48 @@
 				FF10347C2B4D8C110084F5C0 /* bergmannUITestsLaunchTests.swift */,
 			);
 			path = bergmannUITests;
+			sourceTree = "<group>";
+		};
+		FF1034892B4D8DFC0084F5C0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FF1034592B4D8C0E0084F5C0 /* AppDelegate.swift */,
+				FF10345B2B4D8C0E0084F5C0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FF10348A2B4D8E130084F5C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FF10345F2B4D8C0E0084F5C0 /* Main.storyboard */,
+				FF1034642B4D8C100084F5C0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF10348B2B4D8E250084F5C0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FF1034672B4D8C100084F5C0 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FF10348C2B4D8E340084F5C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF1034622B4D8C100084F5C0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF10348D2B4D8E3E0084F5C0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FF10345D2B4D8C0E0084F5C0 /* ViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,12 +480,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = bergmann/Info.plist;
+				INFOPLIST_FILE = bergmann/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -467,12 +508,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = bergmann/Info.plist;
+				INFOPLIST_FILE = bergmann/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
