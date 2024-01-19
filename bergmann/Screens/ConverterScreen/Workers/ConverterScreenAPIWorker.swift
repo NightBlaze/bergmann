@@ -39,6 +39,8 @@ final class ConverterScreenAPIWorker {
     
     private enum Constants {
         #warning("Set your API key here")
+        // Register on https://freecurrencyapi.com/
+        // and get the key on your Dashboard https://app.freecurrencyapi.com/dashboard
         static let apiKey = "fca_live_EjcREcSVGVaLr9F9Ay4Yiu674CGsnq9tG13DlIfQ"
     }
     

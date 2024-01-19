@@ -24,13 +24,16 @@ final class ConverterScreenPresenter {
 
 extension ConverterScreenPresenter: ConverterScreenPresenterLogic {
     func presentCurrencies(_ response: ConverterScreenResponses.Currencies) {
-        view?.displayCurrencies(
-            ConverterScreenViewModels.Currencies(
-                from: response.from.title,
-                to: response.to.title,
-                rate: formatRate(response.rate)
+        mainAsync { [weak self] in
+            guard let self = self else { return }
+            self.view?.displayCurrencies(
+                ConverterScreenViewModels.Currencies(
+                    from: response.from.title,
+                    to: response.to.title,
+                    rate: formatRate(response.rate)
+                )
             )
-        )
+        }
     }
 
     func presentCurrencyAmounts(_ response: ConverterScreenResponses.CurrencyAmounts) {
